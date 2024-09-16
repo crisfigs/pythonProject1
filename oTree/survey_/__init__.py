@@ -126,8 +126,8 @@ class Welcome(Page):
 
     @staticmethod
     def before_next_page(player: Player, timeout_happened):
-        player.treatnumber = random.choices([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11], weights=(0,0,0,0,0,0,1/2,1/2,0,0,0), k=1)[0]
-#1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11
+        player.treatnumber = random.choices([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11], weights=(1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11,1/11), k=1)[0]
+
 class Questions_(Page):
     form_model = 'player'
     form_fields = []
