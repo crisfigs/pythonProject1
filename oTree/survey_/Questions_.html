@@ -124,15 +124,34 @@
         {{elif player.treatnumber in [6,7,8] }} <!-- Choice attractiveness Vignettes 6,7,8-->
             <br>
             {{formfields}}
-        {{elif player.treatnumber in [9,10,11] }} <!-- Simple Choice Vignettes 9,10,11-->
+        {{elif player.treatnumber in [9,10] }} <!-- Simple Choice Vignettes 9,10,11-->
             <br>
-            {{form.reasons_choice.label}}
+            1. Could you state three reasons why you think the professor chose a female student?
             {{form.reasons_choice}}
             <br>
             {{form.appropriateness2.label}}
             {{form.appropriateness2}}
             <br>
-            {{form.reasons_choice_others.label}}
+            3. Which do you think were the three most common answers from other respondents to the question: “Could you state three reasons why you think the professor chose a female student?” You will get an extra 10 cents per answer that matches each of the most common answers given by other participants (thus you can earn a maximum of 30 cents)
+        {{form.reasons_choice_others}}
+            <br>
+            {{form.appropriateness2_others.label}}
+            {{form.appropriateness2_others}}
+            <br>
+            5. Think about false accusations: a student falsely accusing the professor of things like harassment or inappropriate behaviour, for example. How frequent do you think false accusations are in the situation described?
+            {{form.accusations_freq}}
+            <br>
+            6. For someone who is accused, how severe do you believe the consequences will be?
+            {{form.accusations_consequences}}
+        {{elif player.treatnumber in [11] }} <!-- Simple Choice Vignettes 11-->
+            <br>
+            1. Could you state three reasons why you think the professor chose a male student?
+            {{form.reasons_choice}}
+            <br>
+            {{form.appropriateness2.label}}
+            {{form.appropriateness2}}
+            <br>
+            3. Which do you think were the three most common answers from other respondents to the question: “Could you state three reasons why you think the professor chose a male student?” You will get an extra 10 cents per answer that matches each of the most common answers given by other participants (thus you can earn a maximum of 30 cents)
             {{form.reasons_choice_others}}
             <br>
             {{form.appropriateness2_others.label}}
